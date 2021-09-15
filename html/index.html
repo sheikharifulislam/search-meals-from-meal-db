@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title></title>
+</head>
+
+<body>
+    <!-- start header section -->
+    <header>
+        <div class="container">
+            <div class="search-section">
+                <h2 id="title">Search Your Favorite Food</h2>
+                <form action="" id="search-form">
+                    <div class="search-box-section">
+                        <input type="text" placeholder="Search You Want To Food" id="search-box" required>
+                    </div>
+                    <div class="search-btn-section">
+                        <button type="submit" id="search-btn">Search</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </header>
+    <!-- end header section -->
+
+    <!-- start main section -->
+
+    <main>
+        <div class="container">
+            <!-- start loader section  -->
+            <div class="loader" style="display: none;">
+                <svg>
+                    <use href="../images/icons.svg#icon-loader"></use>
+                </svg>
+            </div>
+            <!-- end loader section -->
+
+            <!-- start error section -->
+            <section class="error-section">
+                <div id="error-for-empty-search-box">
+                    <p>Pleasse Sir/Medam Enter Something In The Box Above</p>
+                </div>
+                <div id="error-for-not-result">
+                    <img src="../images/download.png" alt="">
+                </div>
+            </section>
+            <!-- end eeror section -->
+
+            <!-- start all meals section -->
+
+            <section id="all-meals">
+
+            </section>
+        </div>
+    </main>
+
+    <script type="text/javascript" src=../js/index.js></script>
+</body>
+
+</html>

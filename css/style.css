@@ -1,0 +1,274 @@
+/***************************************
+*********import google font**********
+*****************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap');
+
+/***************************************
+******remove broswer default style******
+*****************************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/***************************************
+***************global style*************
+*****************************************/
+
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+/***************************************
+***************header style*************
+*****************************************/
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#title {
+    text-align: center;
+    font-family: 'Kaisei Opti', serif;
+    color: blue;
+    margin: 15px 0 10px 0;
+}
+
+.search-box-section {
+    width: 60%;
+}
+
+.search-box-section input {
+    width: 100%;
+    display: block;
+    padding: 11px 0 11px 15px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: none;
+    border: 1px solid #333;
+}
+
+.search-btn-section button {
+    padding: 11px 25px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid #333;
+    outline: none;
+    margin-left: 5px;
+}
+
+.search-btn-section button:hover {
+    cursor: pointer;
+}
+
+
+/***************************************
+*********style for loader**********
+*****************************************/
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.loader svg {
+    height: 5.5rem;
+    width: 5.5rem;
+    fill: #2b2e4a;
+    -webkit-transform-origin: 44% 50%;
+    -ms-transform-origin: 44% 50%;
+    -o-transform-origin: 44% 50%;
+    transform-origin: 44% 50%;
+    -webkit-animation: rotate 1.5s infinite linear;
+    -o-animation: rotate 1.5s infinite linear;
+    animation: rotate 1.5s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        -webkit-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+/***************************************
+*********style for error section**********
+*****************************************/
+
+.error-section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    font-size: 20px;
+    font-family: 'Kaisei Opti', serif;
+    color: red;
+    text-align: center;
+}
+
+#error-for-empty-search-box,
+#error-for-not-result {
+    display: none;
+}
+
+
+/***************************************
+*********style for all meals section**********
+*****************************************/
+
+#all-meals {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.meal {
+    width: 23%;
+    height: 440px;
+    background-color: #fff;
+    border: 1px solid #333;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.meal:nth-child(n) {
+    margin-right: 2.666666%;
+}
+
+.meal:nth-child(4n) {
+    margin-right: 0%;
+}
+
+.meal .meal-container {
+    width: 93%;
+    height: 95%;
+    margin: auto;
+}
+
+.meal-image {
+    width: 100%;
+    height: 35%;
+    margin-top: 5%;
+}
+
+.meal-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.meal-name {
+    width: 100%;
+    height: 12%;
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+.meal-name h3 {
+    font-family: 'Kaisei Opti', serif;
+    font-size: 19px;
+    line-height: 23px;
+    color: #000;
+    font-weight: 400;
+}
+
+.meal-details {
+    width: 100%;
+    height: 35%;
+    margin-top: 9px;
+    overflow: hidden;
+}
+
+.meal-details p {
+    line-height: 21px;
+    font-size: 16px;
+    color: #4b6584;
+}
+
+.meal-details-btn {
+    width: 100%;
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.meal-details-btn button {
+    padding: 9px 24px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border: 1px solid #eee;
+    font-size: 16px;
+    color: #fff;
+    background-image: linear-gradient(to right, tomato, #FF007F);
+}
+
+.meal-details-btn button:hover {
+    cursor: pointer;
+}
+
+
+/***************************************
+*********responsive desing for mobile devics**********
+*****************************************/
+
+@media screen and (max-width: 480px) {
+    #all-meals {
+        flex-direction: column wrap;
+    }
+    .meal {
+        width: 80%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+}
